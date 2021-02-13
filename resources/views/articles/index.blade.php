@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <title>laravelnews</title>
+    <title>laravelnews一覧</title>
 </head>
 <body>
 <header><a href="http://localhost/sampleproject/public/">laravel-news</a><header>
 <form action="" method="post">
 <div class="title">
 <input type="text" name="title">
+{{csrf_field()}}
 </div>
 <div class="text">
 <textarea name="text" cols="30" rows="10"></textarea>
 </div>
-{{csrf_field()}}
 <input type="submit" value="送信">
 <div class="error_title">
 @if($errors->has("title"))

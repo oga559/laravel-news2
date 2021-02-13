@@ -11,9 +11,13 @@
 <form action="" method="post">
 {{csrf_field()}}
 <div class="comment">
-<textarea name="text" cols="30" rows="10"></textarea>
+<input type="hidden" value="{{$detail_data_id->id}}" name="article_id">
+<textarea name="comment" cols="30" rows="10"></textarea>
 </div>
 <input type="submit" value="コメントを書く">
 </form>
+@foreach($comment_data_id as $comment_data)
+<p>コメント:{{$comment_data -> comment}}</p>
+@endforeach
 </body>
 </html>
