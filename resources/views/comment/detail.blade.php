@@ -8,7 +8,7 @@
 <p>タイトル:{{$detail_data_id->title}}</p>
 <p>テキスト:{{$detail_data_id->text}}</p>
 <hr>
-<form action="" method="post">
+<form action="{{route('details',$detail_data_id->id)}}" method="post">
 {{csrf_field()}}
 <div class="comment">
 <input type="hidden" value="{{$detail_data_id->id}}" name="article_id">
@@ -18,6 +18,7 @@
 </form>
 @foreach($comment_data_id as $comment_data)
 <p>コメント:{{$comment_data -> comment}}</p>
+</form>
 @endforeach
 </body>
 </html>
