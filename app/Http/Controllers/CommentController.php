@@ -24,4 +24,10 @@ class CommentController extends Controller
         Comment::create($detail_data_id);
         return redirect(('/article/'.$id));
     }
+    public function commentdelete($id)
+    {
+            Comment::destroy($id);
+            $find = Comment::where('id',$id);
+            return back();
+    }
 }

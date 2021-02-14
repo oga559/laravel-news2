@@ -18,6 +18,10 @@
 </form>
 @foreach($comment_data_id as $comment_data)
 <p>コメント:{{$comment_data -> comment}}</p>
+<form action="{{route('delete',$comment_data -> id)}}" method="post" name="delete">
+{{csrf_field()}}
+{{ method_field('DELETE') }}
+<input type="submit" value="削除">
 </form>
 @endforeach
 </body>
