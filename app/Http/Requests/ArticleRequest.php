@@ -28,4 +28,12 @@ class ArticleRequest extends FormRequest
             'text' => 'required'
         ];
     }
+    public function messages()
+{
+    return [
+        'title.required' => '・タイトルは必須です',
+        'title.max' => '・タイトルは30文字以下です',
+        'text.required' => '・記事は必須です'
+    ];
+}
 }

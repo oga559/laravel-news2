@@ -27,4 +27,11 @@ class CommnetRequest extends FormRequest
             "comment" => 'required | max:50'
         ];
     }
+    public function messages()
+    {
+        return [
+            'comment.required' => '・コメントは必須です',
+            'comment.max' => '・コメントは50文字以下です',
+        ];
+    }
 }
