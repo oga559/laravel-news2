@@ -13,7 +13,7 @@ class ArticleController extends Controller
     {
         $article_db_data = Article::orderBy('id','desc')->get();//新着順に、Articleモデルからdbのデータを取得
         //取得したデータをビューに渡す
-        return view('articles.index',compact('article_db_data'));
+        return view('articles.article_list',compact('article_db_data'));
     }
 //記事投稿
     //本来Requestのところを作っておいたArticleRequestとして、ArticleRequestクラスのバリデーションを行える

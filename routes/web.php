@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 //記事一覧
 Route::get('/', "ArticleController@index")->name('article_index');
 //投稿機能
-Route::post('/', "ArticleController@create")->name('article_store');
+Route::post('/add', "ArticleController@create")->name('article_store');
 //詳細ページの記事、タイトル、コメント表示
 Route::get('article/{id}', "CommentController@showdetails")->name('details');
 //コメント投稿

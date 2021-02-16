@@ -14,7 +14,7 @@ class CommentController extends Controller
         $detail_data_id = Article::find($id);//Articleモデルからdbのデータ取得
         $comment_data_id = Comment::where('article_id',$id)->get();
          //取得したデータをビューに渡す
-        return view('comment.detail',compact('detail_data_id','comment_data_id'));
+        return view('comment.detail_list',compact('detail_data_id','comment_data_id'));
     }
 //dbにコメント投稿
     public function commentstore(CommnetRequest $request)

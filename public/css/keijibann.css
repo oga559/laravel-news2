@@ -1,9 +1,10 @@
 body{
-    margin:0px 50px;
+    margin: 0px 50px;
 }
 h2{
     background-color:rgba(0, 255, 0,0.3);
     padding: 5px;
+    margin-top: 5px;
 }
 .title_news{
     color: rgba(0, 0, 0, 1);
@@ -17,7 +18,8 @@ label{
     float: left;
 }
 textarea{
-    vertical-align:top;
+    vertical-align: top;
+    margin-top: 5px;
 }
 input{
     margin-top: 5px;
