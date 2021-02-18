@@ -1,0 +1,29 @@
+body{
+    margin: 0px 50px;
+}
+h2{
+    background-color:rgba(0, 255, 0,0.3);
+    padding: 5px;
+    margin-top: 5px;
+}
+.title_news{
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+    font-style: oblique;
+    font-weight: 100;
+}
+label{
+    width: 80px;
+    display: block;
+    float: left;
+}
+textarea{
+    vertical-align: top;
+    margin-top: 5px;
+}
+input{
+    margin-top: 5px;
+}
+.submit{
+    margin-left: 260px;
+}
