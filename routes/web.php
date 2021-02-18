@@ -19,6 +19,6 @@ Route::post('/add', "ArticleController@create")->name('article_store');
 //詳細ページの記事、タイトル、コメント表示
 Route::get('article/{id}', "CommentController@showdetails")->name('details');
 //コメント投稿
-Route::post('article/{id}', "CommentController@commentstore")->name('commentstore');
+Route::post('/comments', "CommentController@commentstore")->name('commentstore');
 //コメント削除
 Route::delete('article/{id}', "CommentController@commentdelete")->name('delete');

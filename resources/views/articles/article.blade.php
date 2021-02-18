@@ -28,7 +28,7 @@
       <input type="submit" value="送信" class="submit" onclick="return confirm('投稿しますか?')">
     </form>
       <hr>
-      @foreach($article_db_data as $article_data) 
+      @foreach($articles as $article_data) 
       <p>タイトル:{{$article_data->title}}</p>
       <!-- Str::limit関数で出力文字数制限 -->
       <p>テキスト:{{Str::limit($article_data->text,120,'...')}}</p>

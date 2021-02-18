@@ -10,4 +10,9 @@ class Article extends Model
     protected $table = "articles";
     //カラム
     protected $fillable = ['title', 'text'];
+
+    public function comments()
+    {
+        return $this->hasMany('App\Models\Comment');
+    }
 }
